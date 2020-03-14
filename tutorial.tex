@@ -1,0 +1,111 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage[portuguese]{babel}
+\usepackage{hyperref}
+
+%opening
+\title{Tutorial de \LaTeX\xspace}
+\author{João Gonçalves}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\section{Introdução}
+Isto é ficheiro em que se realiza o que esta no tutorial que se pode encontrar neste link para o youtube:\\
+\url{https://www.youtube.com/playlist?list=PL1D4EAB31D3EBC449}
+
+E um pequeno exemplo:
+
+
+Suppose we are given a recangle with side lengths $x+1$ and $x+3$. Then the equantion $$A=x^2+5x+3$$ represents the area of the rectangle.
+\newpage
+\section{Notações Comuns de Matemática}
+superscripts: 
+$$2x^{34}$$
+$$2x^{3x+4}$$
+$$2x^{3x^4+5}$$
+\\
+subscripts:
+$$x_1$$
+$$x_{12}$$
+$${x_{x_2}}_2$$
+\\
+greek letters:
+$$\pi$$
+$$\alpha$$
+$$A*\pi r^2$$
+\\
+trig functions:
+$$y=\sin{x}$$
+$$y=\cos{x}$$
+$$y=\tan{x}$$
+\\
+lag functions:
+$$\log_{10}{x}$$
+$$\ln{x}$$
+\\
+square roots:
+$$\sqrt{2}$$
+$$\sqrt[3]{5}$$
+$$\sqrt{x^2+y^2}$$
+$$\sqrt{1+\sqrt{x}}$$
+\\
+Fractions:
+
+About $\displaystyle{\frac{2}{3}}$ of the glass is full.
+
+$$\frac{x}{x^2+x+1}$$
+
+$$\frac{\sqrt{x+1}}{\sqrt[2]{x-1}}$$
+
+$$\frac{1}{1+\frac{1}{x}}$$
+
+$$\sqrt{\frac{x}{x^2+x+1}}$$
+
+\newpage
+\section{Bracket Tables \& Arrays}
+\huge
+$$(x+1)$$
+$$3[2+(x+1)]$$
+$$\{a,b,c\}$$
+$$\$12.55$$
+
+$$3\left(\frac{2}{5}\right)$$
+$$3\left[\frac{2}{5}\right]$$
+$$3\left\{\frac{2}{5}\right\}$$
+
+$$\left|\frac{x+1}{x}\right|$$
+
+$$\left\{ x+2\right.$$
+
+Tabular:\\
+\begin{tabular}{|c|ccccc|}
+
+\hline
+ $x$ & 1 & 2 & 3 & 4 & 5  \\\hline
+ $f(x)$ & 10 & 11 & 12 & 13 & 14\\ \hline
+ 
+ \end{tabular}
+
+ \newpage
+ Equation:
+ 
+ \begin{eqnarray}% para esconder os numeros mete se * a frente do eqnarray assim eqnarray* e os numeros desaparecem
+  5x^2-9&=&x+3\\%para meter os iguais no meio é preciso meter los entre &
+  4x^2&=&12\\
+  x^3&=&3\\
+  x&\approx&\pm1.732
+ \end{eqnarray}
+
+ List:
+ \begin{enumerate}
+  \item pencil
+  \item paper
+ \end{enumerate}
+  pencil
+
+
+\end{document}
