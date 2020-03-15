@@ -1,9 +1,10 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,20pt,hidelinks]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{xspace}
 \usepackage[portuguese]{babel}
 \usepackage{hyperref}
-
+\usepackage{pagecolor,lipsum}% http://ctan.org/pkg/{pagecolor,lipsum}
+%\pagecolor{black}
 %opening
 \title{Tutorial de \LaTeX{}}
 \author{OnikenX}
@@ -102,7 +103,7 @@ $$\left\{ x+2\right.$$
   x&\approx&\pm1.732
  \end{eqnarray}
 
- List:
+ \subsection{List:}
  %As listas enumeradas automaiticamente se identificam
  \begin{enumerate}
   \item Escreva x num espaço de x.
@@ -118,7 +119,7 @@ $$\left\{ x+2\right.$$
  \end{enumerate}  
 
  %uma lista de item nao tem organizacao
- Itens:
+ \subsection{Itens:}
  \begin{itemize}
   \item Escreva x num espaço de x.
   \item paper
@@ -137,25 +138,23 @@ $$\left\{ x+2\right.$$
   \item[Commutative]$a+b=b+a$
   \item[Associative]$a+(b+c)=(a+b)$
   \item[Distributive]$a+(b+c)=ab+ac$
-  
  \end{enumerate}
  
  \newpage
 \section{Texto e formatação de documentos}
+\subsection{Italico, negrito e typewriter:}
 Isto ira produzir \textit{texto italico}.
-
-
 Este irá produzir \textbf{texto em negrito}.
-
 Isto ira produzir o texto em fonte \texttt{typewriter}.
 
-
-Porfavor visitem o meu website \texttt{onikenx.github.io}.
-
-
+Porfavor visitem o meu website: 
+% \begin{textcolorblue}
+% \textit{\href{https://onikenx.github.io}{onikenx.github.io}}.
+% \end{}
+\subsection{Tamanhos e alinhamentos:}
 \begin{center}
 
-Porfavor desculpem a minha tia anabela.
+Porfavor desculpem a minha tia anabela.\\
 
 \tiny
 Porfavor desculpem a minha tia anabela.
@@ -189,9 +188,9 @@ Porfavor desculpem a minha tia anabela.
  This is a left align text.
 \end{flushleft}
 
-
-
 $\rightarrow$
 $\leftarrow$
+
+Aqui tem o \href{http://www.sascha-frank.com/Arrow/latex-arrows.html}{\textit{\textcolor{blue}{link}}} para varias setas que se pode fazer em \LaTeX{}.
 
 \end{document}
