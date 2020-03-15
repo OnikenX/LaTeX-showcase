@@ -3,16 +3,45 @@
 \usepackage{xspace}
 \usepackage[portuguese]{babel}
 
+%Fontes especias de matemática
+\usepackage{amsfonts}
+
 %hide hilelinks esconde os links de terem bordas feias
 \usepackage[hidelinks]{hyperref}
+
+
+
+
+% CORES
 
 %tratar das cores
 \usepackage{xcolor}
 \usepackage{pagecolor,lipsum}% http://ctan.org/pkg/{pagecolor,lipsum}
+
 %meter o fundo em pretos e os caracters em branco
 \pagecolor{black}
 \color{white}
 
+%defenicao de uma cor
+% \definecolor{name}{model}{color-spec}
+\definecolor{aquamarine}{rgb}{0, 181, 190}
+
+
+
+
+
+%MACROS
+
+\def\eq1{y=\frac{x}{3x^2+x+1}}
+\def\labelaxes{Remember to include a scale and label your axes.}
+
+
+
+
+%comand for links
+%ele recebe 2 argumentos, o primeiro #1 é o link e o segundo #2 é a descrição e como o link vai ser demostrado
+\newcommand{\lk}[2]{\href{#1}{\textcolor{aquamarine}{#2}}}
+\newcommand{\smol}{\small}
 %este pacote faz com que as margens fiquem menores
 \usepackage{fullpage}
 
@@ -26,6 +55,8 @@
 \author{OnikenX}
 %o que esta comentado é o que ele faz de default
 % \date{\today}
+
+
 \begin{document}
 
 \maketitle
@@ -173,10 +204,12 @@ Porfavor visitem o meu website:
 
 Porfavor desculpem a minha tia anabela.\\
 
+
+
 \tiny
 Porfavor desculpem a minha tia anabela.
 
-\small
+\smol
 Porfavor desculpem a minha tia anabela.
 
 \normalsize
@@ -208,10 +241,41 @@ Porfavor desculpem a minha tia anabela.
 $\rightarrow$
 $\leftarrow$
 
-Aqui tem o \href{http://www.sascha-frank.com/Arrow/latex-arrows.html}{\textit{\textcolor{blue}{link}}} para varias setas que se pode fazer em \LaTeX{}.
+Aqui tem o \lk{http://www.sascha-frank.com/Arrow/latex-arrows.html}{link} as para varias setas que se pode fazer em \LaTeX{}.
 
 \section{Packages, Macros \& Graphics}
 \subsection{Pacotes:}
-    Pacotes servem para expandir as funcionaridades basicas do \LaTeX{}, exemplos podem ser encontrados na pagina fonte que se pode encontrar \href{https://github.com/OnikenX/LaTeX-showcase}{\textcolor{blue}{neste repositorio no github}}.
+    Pacotes servem para expandir as funcionaridades basicas do \LaTeX{}, exemplos podem ser encontrados na pagina fonte que se pode encontrar \href{https://github.com/OnikenX/LaTeX-showcase}{\textcolor{aquamarine}{neste repositorio no github}}.
+    
+    
+    Teste do comando lk:
+    \lk{http://ecasia.com}{ecasia website}
 
+\subsubsection{Denotações matemáticas:}    
+\par\indent    
+    O conjunto de números naturais denomina-se
+    $\mathbb{N}$
+    .
+    
+    O conjunto de números inteiros denomina-se
+    $\mathbb{Z}$
+    .
+    
+    O conjunto de números racionais denomina-se
+    $\mathbb{Q}$
+    .
+    
+    O conjunto de números reais denomina-se
+    $\mathbb{R}$
+    .
+    
+    \subsection{Macros:}
+    
+    Graph $\eq1$. \labelaxes
+    
+    Identify the asymptotes for the graph of $\eq1$.
+    
+    
+    
+    
 \end{document}
