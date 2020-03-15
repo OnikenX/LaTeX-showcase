@@ -5,13 +5,15 @@
 \usepackage{hyperref}
 
 %opening
-\title{Tutorial de \LaTeX\xspace}
+\title{Tutorial de \LaTeX{}}
 \author{OnikenX}
-
+%isto estar comentado ou nao faz diferença
+% \date{\today}
 \begin{document}
 
 \maketitle
 
+\tableofcontents
 \newpage
 \section{Introdução}
 Isto é ficheiro em que se realiza o que esta no tutorial que se pode encontrar neste link para o youtube:\\
@@ -23,37 +25,37 @@ E um pequeno exemplo:
 Suppose we are given a recangle with side lengths $x+1$ and $x+3$. Then the equantion $$A=x^2+5x+3$$ represents the area of the rectangle.
 \newpage
 \section{Notações Comuns de Matemática}
-superscripts: 
+\subsection{superscripts:} 
 $$2x^{34}$$
 $$2x^{3x+4}$$
 $$2x^{3x^4+5}$$
-\\
-subscripts:
+
+\subsection{subscripts:}
 $$x_1$$
 $$x_{12}$$
 $${x_{x_2}}_2$$
-\\
-greek letters:
+
+\subsection{greek letters:}
 $$\pi$$
 $$\alpha$$
 $$A*\pi r^2$$
-\\
-trig functions:
+
+\subsection{trig functions:}
 $$y=\sin{x}$$
 $$y=\cos{x}$$
 $$y=\tan{x}$$
-\\
-lag functions:
+
+\subsection{lag functions:}
 $$\log_{10}{x}$$
 $$\ln{x}$$
-\\
-square roots:
+
+\subsection{square roots:}
 $$\sqrt{2}$$
 $$\sqrt[3]{5}$$
 $$\sqrt{x^2+y^2}$$
 $$\sqrt{1+\sqrt{x}}$$
-\\
-Fractions:
+
+\subsection{Fractions:}
 
 About $\displaystyle{\frac{2}{3}}$ of the glass is full.
 
@@ -67,12 +69,13 @@ $$\sqrt{\frac{x}{x^2+x+1}}$$
 
 \newpage
 \section{Bracket Tables \& Arrays}
-
+\subsection{The basics:}
 $$(x+1)$$
 $$3[2+(x+1)]$$
 $$\{a,b,c\}$$
 $$\$12.55$$
 
+\subsection{Tamanhos adaptativos:}
 $$3\left(\frac{2}{5}\right)$$
 $$3\left[\frac{2}{5}\right]$$
 $$3\left\{\frac{2}{5}\right\}$$
@@ -81,7 +84,7 @@ $$\left|\frac{x+1}{x}\right|$$
 
 $$\left\{ x+2\right.$$
 
-Tabular:\\
+\subsection{Tabular:}
 \begin{tabular}{|c|ccccc|}
 
 \hline
@@ -90,7 +93,7 @@ Tabular:\\
  
  \end{tabular}
 
- Equation:
+ \subsection{Equation:}
  
  \begin{eqnarray}% para esconder os numeros mete se * a frente do eqnarray assim eqnarray* e os numeros desaparecem
   5x^2-9&=&x+3\\%para meter os iguais no meio é preciso meter los entre &
@@ -149,14 +152,16 @@ Isto ira produzir o texto em fonte \texttt{typewriter}.
 
 Porfavor visitem o meu website \texttt{onikenx.github.io}.
 
-Porfavor desculpem a minha tia anabela.
+
 \begin{center}
+
+Porfavor desculpem a minha tia anabela.
+
 \tiny
 Porfavor desculpem a minha tia anabela.
 
 \small
 Porfavor desculpem a minha tia anabela.
-
 
 \normalsize
 Porfavor desculpem a minha tia anabela.
@@ -174,8 +179,19 @@ Porfavor desculpem a minha tia anabela.
 Porfavor desculpem a minha tia anabela.
 
 \end{center}
-coisas
+
+\begin{flushright}
+
+ This is a right align text.
+\end{flushright}
+
+\begin{flushleft}
+ This is a left align text.
+\end{flushleft}
 
 
+
+$\rightarrow$
+$\leftarrow$
 
 \end{document}
