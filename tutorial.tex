@@ -1,20 +1,29 @@
-\documentclass[a4paper,20pt,hidelinks]{article}
+\documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{xspace}
 \usepackage[portuguese]{babel}
-\usepackage{hyperref}
+
+%hide hilelinks esconde os links de terem bordas feias
+\usepackage[hidelinks]{hyperref}
+
+%tratar das cores
+\usepackage{xcolor}
 \usepackage{pagecolor,lipsum}% http://ctan.org/pkg/{pagecolor,lipsum}
-%\pagecolor{black}
+%meter o fundo em pretos e os caracters em branco
+\pagecolor{black}
+\color{white}
+
 %opening
 \title{Tutorial de \LaTeX{}}
 \author{OnikenX}
-%isto estar comentado ou nao faz diferença
+%o que esta comentado é o que ele faz de default
 % \date{\today}
 \begin{document}
 
 \maketitle
 
 \tableofcontents
+
 \newpage
 \section{Introdução}
 Isto é ficheiro em que se realiza o que esta no tutorial que se pode encontrar neste link para o youtube:\\
